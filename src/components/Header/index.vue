@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="header-main w-full flex items-center justify-evenly pt-2 pl-24 pb-4">
+    <div class="header-main flex items-center justify-evenly pt-2 pl-24 pb-4">
       <div class="left-sect hover:cursor-pointer">
         <a href="#"></a>
-        <img class="w-[184px] object-cover" src="/src/assets/media/logo.png" alt="logo" />
+        <img class="w-[100px] lg:w-[184px] object-cover" src="/public/logo.png" alt="logo" />
       </div>
-      <div class="middle-sect flex items-center gap-5">
+      <div class="middle-sect hidden sm:flex items-center gap-5">
         <div class="email flex items-center gap-3">
           <i class="fa-solid fa-envelope icons text-green-600"></i>
           <p class="text-lg">info@uzlogistic.uz</p>
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <div class="right-sect text-white flex justify-between mr-[312px] -mt-6">
+    <div class="right-sect hidden text-white lg:flex justify-between mr-[312px] -mt-6">
       <div class="text-black"></div>
       <ul class="flex items-center">
         <li>
@@ -57,9 +57,6 @@
         </li>
       </ul>
     </div>
-    <div>
-      <router-view></router-view>
-    </div>
   </div>
 </template>
 
@@ -69,7 +66,6 @@
 .header-main {
   background-color: rgb(11, 41, 79);
   color: white;
-  font-family: 'Oswald', sans-serif;
 }
 
 .mob-menu {
@@ -87,23 +83,5 @@
 
 ul li a {
   background-color: rgb(9, 32, 63);
-}
-@media (max-width: 991px) {
-  .middle-sect {
-    display: none;
-    margin: auto;
-  }
-  .mob-menu {
-    display: block;
-  }
-  .right-sect {
-    display: none;
-  }
-}
-
-@media (max-width: 1172px) {
-  .btn-div {
-    display: none;
-  }
 }
 </style>

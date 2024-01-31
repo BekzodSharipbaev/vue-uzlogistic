@@ -1,5 +1,8 @@
 <template>
-  <Header />
+  <div class="relative overflow-hidden">
+    <Header />
+    <router-view />
+  </div>
 </template>
 
 <script setup>
