@@ -1,45 +1,80 @@
 <template>
-  <div>
-    <div class="header-main flex items-center justify-evenly pt-2 pl-24 pb-4">
-      <div class="left-sect hover:cursor-pointer">
-        <a href="#"></a>
-        <img class="w-[100px] lg:w-[184px] object-cover" src="/public/logo.png" alt="logo" />
+  <div class="wrapper">
+    <header class="header fixed w-full top-0 left-0 z-50">
+      <div class="container">
+        <div class="header_body relative z-2 flex justify-evenly items-center h-32">
+          <a href="#">
+            <img class="w-1/3" src="/public/logo.png" alt="logo" />
+          </a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <div class="header_contacts">
+            <ul class="contacts_list flex gap-5">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-green-600 text-2xl"></i>
+                <p class="text-lg">info@uzlogistic.uz</p>
+              </li>
+              <li class="flex items-center gap-3 relative">
+                <span class="absolute -top-8 right-1 text-lg text-green-600">Круглосуточно</span>
+                <i class="fa-solid fa-phone icons text-green-600 text-2xl"></i>
+                <p class="text-lg">(+998 78) <b>150-80-08</b></p>
+              </li>
+            </ul>
+          </div>
+          <div class="header_nets">
+            <div></div>
+            <a href="#" class="hover:text-green-600"
+              ><i class="fa-brands fa-facebook-f text-xl"> </i
+            ></a>
+          </div>
+        </div>
       </div>
-      <div class="middle-sect hidden sm:flex items-center gap-5">
-        <div class="email flex items-center gap-3">
-          <i class="fa-solid fa-envelope icons text-green-600"></i>
-          <p class="text-lg">info@uzlogistic.uz</p>
+    </header>
+  </div>
+  <!-- <div>
+    <div class="header-main flex items-center justify-evenly pt-2 pl-24 pb-4">
+      <div class="container">
+        <div class="left-sect hover:cursor-pointer">
+          <a href="#"></a>
+          <img class="w-[100px] lg:w-[184px] object-cover" src="/public/logo.png" alt="logo" />
         </div>
-        <div class="phone flex flex-col items-center justify-items-center gap-3 mb-10">
-          <span class="text-green-600 text-xl ml-16">Круглосуточно</span>
-          <span
-            ><i class="fa-solid fa-phone icons text-green-600 mr-3"></i>
-            <span class="font-bold">(+998 78) 150-80-08</span></span
+        <div class="middle-sect hidden sm:flex items-center gap-5">
+          <div class="email flex items-center gap-3">
+            <i class="fa-solid fa-envelope icons text-green-600"></i>
+            <p class="text-lg">info@uzlogistic.uz</p>
+          </div>
+          <div class="phone flex flex-col items-center justify-items-center gap-3 mb-10">
+            <span class="text-green-600 text-xl ml-16">Круглосуточно</span>
+            <span
+              ><i class="fa-solid fa-phone icons text-green-600 mr-3"></i>
+              <span class="font-bold">(+998 78) 150-80-08</span></span
+            >
+          </div>
+          <div class="nets flex items-center gap-3">
+            <a href="#" class="hover:text-green-600"
+              ><i class="fa-brands fa-facebook-f text-xl"> </i
+            ></a>
+            <a href="#" class="hover:text-green-600 duration-500"
+              ><i class="fa-solid fa-paper-plane text-xl"></i
+            ></a>
+            <a href="#" class="hover:text-green-600 duration-500"
+              ><i class="fa-brands fa-whatsapp text-xl"></i
+            ></a>
+            <a href="#" class="hover:text-green-600 duration-500"
+              ><i class="fa-brands fa-linkedin-in text-xl"></i
+            ></a>
+          </div>
+          <div
+            class="btn-div flex bg-green-600 items-center h-14 px-4 duration-500 border-b-[6px] border-green-700"
           >
-        </div>
-        <div class="nets flex items-center gap-3">
-          <a href="#" class="hover:text-green-600"
-            ><i class="fa-brands fa-facebook-f text-xl"> </i
-          ></a>
-          <a href="#" class="hover:text-green-600 duration-500"
-            ><i class="fa-solid fa-paper-plane text-xl"></i
-          ></a>
-          <a href="#" class="hover:text-green-600 duration-500"
-            ><i class="fa-brands fa-whatsapp text-xl"></i
-          ></a>
-          <a href="#" class="hover:text-green-600 duration-500"
-            ><i class="fa-brands fa-linkedin-in text-xl"></i
-          ></a>
-        </div>
-        <div
-          class="btn-div flex bg-green-600 items-center h-14 px-4 duration-500 border-b-[6px] border-green-700"
-        >
-          <a href="#" class="mr-2"><i class="fa-solid fa-file-signature text-xl"></i></a>
-          <p>ЗАЯВКА НА ПЕРЕВОЗКУ</p>
-        </div>
-        <div class="mob-menu">
-          <a href=""></a>
-          <i class="fa-solid fa-bars text-green-600"></i>
+            <a href="#" class="mr-2"><i class="fa-solid fa-file-signature text-xl"></i></a>
+            <p>ЗАЯВКА НА ПЕРЕВОЗКУ</p>
+          </div>
+          <div class="mob-menu">
+            <a href=""></a>
+            <i class="fa-solid fa-bars text-green-600"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -57,15 +92,23 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script></script>
 
 <style>
-.header-main {
-  background-color: rgb(11, 41, 79);
-  color: white;
+p {
+  font-family: 'Oswald', sans-serif;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(9, 32, 63);
 }
 
 .mob-menu {

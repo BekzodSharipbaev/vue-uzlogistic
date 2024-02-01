@@ -1,5 +1,5 @@
 <template>
-  <div class="main-div">
+  <!-- <div class="main-div">
     <div class="first-sect pt-20 text-white">
       <div class="container txt-log text-left w-full">
         <h1
@@ -19,7 +19,7 @@
           проведения тендера.
         </p>
       </div>
-      <div class="containerr pt-16 pl-8">
+      <div class="container pt-16 pl-8">
         <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-5">
           <div class="grid lg:flex items-center gap-3">
             <img class="w-12" src="/public/icons/advantage-1.png" alt="" />
@@ -62,7 +62,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup></script>
