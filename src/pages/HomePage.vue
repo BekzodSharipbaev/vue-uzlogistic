@@ -1,4 +1,7 @@
 <template>
+  <div class="wrapper">
+    <div class="first-sect"></div>
+  </div>
   <!-- <div class="main-div">
     <div class="first-sect pt-20 text-white">
       <div class="container txt-log text-left w-full">
@@ -71,12 +74,13 @@
 .main-div {
 }
 .first-sect {
-  background-image: url('public/slider/slide-1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:
+    linear-gradient(to right, rgba(38, 44, 133, 0.6), rgba(30, 54, 133, 0.6)) no-repeat center
+      center fixed,
+    url('/public/slider/slide-1.jpg') no-repeat center center fixed;
   background-position: center;
   font-family: 'Oswald', sans-serif;
-  min-height: calc(100svh - 141px);
+  min-height: calc(100svh - 128px);
 }
 
 .second-sect {
