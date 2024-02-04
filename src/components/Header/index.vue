@@ -17,7 +17,7 @@
               <p class="text-lg max_md:text-base">info@uzlogistic.uz</p>
             </div>
             <div class="phone-numb-block flex items-center gap-3 relative max_lit:hidden">
-              <span class="absolute -top-6 right-0 text-lg text-green-600 max_md:text-base"
+              <span class="crug absolute -top-6 right-0 text-lg text-green-600 max_md:text-base"
                 >Круглосуточно</span
               >
               <i class="fa-solid fa-phone icons text-green-600 text-2xl"></i>
@@ -150,6 +150,10 @@ p {
 .btn-block:hover {
   background-color: rgb(9, 32, 63);
   cursor: pointer;
+}
+
+.crug {
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu {

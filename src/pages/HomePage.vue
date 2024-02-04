@@ -1,6 +1,51 @@
 <template>
   <div class="wrapper">
-    <div class="first-sect"></div>
+    <div class="first-sect">
+      <div class="container flex flex-col items-center justify-center h-screen">
+        <div class="content">
+          <h1 class="text-7xl font-normal w-4/5 mb-3.5 leading-normal">
+            Комплексная технологичная ЛОГИСТИКА
+          </h1>
+          <p class="w-2/4 leading-normal">
+            Компания СП ООО «Uzlogistic» за короткое время успела стать динамично развивающимся
+            3PL-оператором, предоставляющим полный спектр логистических услуг. Мы работаем с любыми
+            типами грузов и организовываем поставки из любой точки мира под различными таможенными
+            процедурами. Ключевым преимуществом компаний является собственная логистическая
+            инфраструктура, а также то, что СП ООО «Uzlogistic» включена в реестр таможенных
+            перевозчиков, осуществляющих перевозку товаров, находящихся под таможенным контролем без
+            таможенного сопровождения, и в реестр единых поставщиков услуг, что позволяет заключать
+            прямые договоры с местными организациями, осуществляющими внешнеторговые операции, без
+            проведения тендера.
+          </p>
+        </div>
+        <div class="advantages pt-32">
+          <div class="advantages-items">
+            <ul class="grid grid-cols-5 gap-2">
+              <li class="flex items-center gap-3">
+                <img src="/public/icons/advantage-1.png" alt="advantage-1" />
+                <p>Профессиональная команда</p>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="/public/icons/advantage-2.png" alt="advantage-1" />
+                <p>Обширная география перевозок</p>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="/public/icons/advantage-3.png" alt="advantage-1" />
+                <p>58 стран</p>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="/public/icons/advantage-4.png" alt="advantage-1" />
+                <p>Более 554 автомобилей</p>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="/public/icons/advantage-5.png" alt="advantage-1" />
+                <p>Собственный терминал</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- <div class="main-div">
     <div class="first-sect pt-20 text-white">
@@ -71,16 +116,21 @@
 <script setup></script>
 
 <style scoped>
-.main-div {
+p {
+  font-family: 'Roboto', sans-serif;
 }
+
 .first-sect {
   background:
-    linear-gradient(to right, rgba(38, 44, 133, 0.6), rgba(30, 54, 133, 0.6)) no-repeat center
+    linear-gradient(to right, rgba(2, 52, 109, 0.365), rgba(5, 61, 124, 0.605)) no-repeat center
       center fixed,
     url('/public/slider/slide-1.jpg') no-repeat center center fixed;
   background-position: center;
-  font-family: 'Oswald', sans-serif;
   min-height: calc(100svh - 128px);
+}
+
+.advantages p {
+  font-family: 'Oswald', sans-serif;
 }
 
 .second-sect {
@@ -93,15 +143,5 @@
 
 .about-block {
   box-shadow: 8px 5px 100px 10px rgb(189, 188, 188);
-}
-
-.containerr {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.txt-log {
-  width: 1140px;
-  margin: 0 auto;
 }
 </style>
