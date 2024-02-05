@@ -80,7 +80,7 @@
     </div>
     <div class="second-sect flex items-center">
       <div class="short-about w-1/2 h-[26rem] pt-14 pr-16">
-        <div class="about-content pl-96 max_2xl:pl-32 max_lg:pl-14">
+        <div class="about-content pl-64 max_2xl:pl-32 max_lg:pl-14">
           <div class="about-title mb-20">
             <h1 class="text-6xl text-black relative max_xl:text-4xl">
               О нашей компании
