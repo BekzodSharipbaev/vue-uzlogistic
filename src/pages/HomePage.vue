@@ -1,9 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="first-sect">
-      <div
-        class="container flex flex-col items-center justify-center h-screen max_min:justify-normal"
-      >
+      <div class="container flex flex-col items-center justify-center h-screen">
         <div class="content pb-32">
           <h1
             class="text-7xl font-normal w-4/5 mb-3.5 leading-normal max_lg:leading-none max_lg:w-full max_md:text-5xl max_md:text-center max_min:text-3xl max_lit:text-2xl"
@@ -50,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="advantages-small mt-3 hidden">
+    <div class="advantages-small p-5 mt-3 hidden">
       <div class="container">
         <div class="advantages-items">
           <ul class="grid grid-cols-5 gap-2 max_lg:grid-cols-3 max_sm:grid-cols-2">
@@ -79,10 +77,10 @@
       </div>
     </div>
     <div class="second-sect flex items-center">
-      <div class="short-about w-1/2 h-[26rem] pt-14 pr-16">
-        <div class="about-content pl-64 max_2xl:pl-32 max_lg:pl-14">
-          <div class="about-title mb-20">
-            <h1 class="text-6xl text-black relative max_xl:text-4xl">
+      <div class="short-about w-1/2 h-[26rem] pt-14 pr-16 max_lit:pr-5">
+        <div class="about-content pl-64 max_2xl:pl-32 max_lg:pl-14 max_lit:pl-5">
+          <div class="about-title mb-20 max_min:mb-5">
+            <h1 class="text-6xl text-black relative max_xl:text-4xl max_lit:text-3xl">
               О нашей компании
               <span class="absolute top-10 left-1/2 text-green-600">Uzlogistic</span>
             </h1>
@@ -98,10 +96,10 @@
         </div>
       </div>
     </div>
-    <div class="services-sect">
-      <div class="container text-right">
-        <div class="services-title flex flex-col justify-items-end w-4/6">
-          <h1 class="text-6xl">
+    <div class="services-sect px-20 max_lg:px-0">
+      <div class="container flex flex-col items-end max_lg:items-center">
+        <div class="services-title text-right w-3/5 max_lg:text-center">
+          <h1 class="text-6xl mt-20 mb-[2rem] max_lg:text-4xl">
             Наши основные
             <b class="text-green-600">услуги</b>
           </h1>
@@ -114,72 +112,86 @@
           </p>
         </div>
       </div>
+      <div
+        class="services-items flex mt-32 max_lg:grid max_lg:grid-cols-3 max_md:grid-cols-2 max_lit:grid-cols-1"
+      >
+        <div class="service-item mb-36 h-[27.5rem] w-[19.5rem] max_lg:w-full max_lg:mb-0">
+          <a href="#">
+            <div class="first-service flex flex-col justify-between h-full w-full p-4">
+              <h1 class="text-2xl">Мультимодальные контейнерные перевозки</h1>
+              <span class="flex items-center gap-2">
+                Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+        <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
+          <a href="#">
+            <div class="second-service flex flex-col justify-between h-full w-full p-4">
+              <h1 class="text-2xl">Транспортировка автомобилей</h1>
+              <span class="flex items-center gap-2">
+                Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+        <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
+          <a href="#">
+            <div class="third-service flex flex-col justify-between h-full w-full p-4">
+              <h1 class="text-2xl">Перевозка опасных грузов</h1>
+              <span class="flex items-center gap-2">
+                Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+        <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
+          <a href="#">
+            <div class="fourth-service flex flex-col justify-between h-full w-full p-4">
+              <h1 class="text-2xl">Управление цепочками поставок</h1>
+              <span class="flex items-center gap-2">
+                Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+        <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
+          <a href="#">
+            <div class="fifth-service flex flex-col justify-between h-full w-full p-4">
+              <h1 class="text-2xl">Услуги контейнерных терминалов</h1>
+              <span class="flex items-center gap-2">
+                Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="partners-sect p-20">
+      <div class="container">
+        <div class="partners-title flex flex-col items-end">
+          <h1 class="text-6xl mb-[2rem]">Наши <b class="text-green-600">партнеры</b></h1>
+          <p>Нашими партнерами являются:</p>
+        </div>
+        <div class="partners-content">
+          <div class="partners-img w-1/2 relative max_lg:hidden">
+            <img src="/public/other/short-partners.png" alt="" />
+            <h1 class="text-6xl absolute top-72 left-24 max_xl:text-4xl">Более</h1>
+            <h2 class="text-[10rem] absolute bottom-14 left-24 max_xl:text-[6rem]">
+              <big class="text-[16rem] max_xl:text-[10rem]">5</big>
+              лет
+            </h2>
+            <h3
+              class="text-7xl font-bold absolute top-[38rem] left-24 max_xl:text-5xl max_xl:top-[34rem]"
+            >
+              Партнерство
+            </h3>
+          </div>
+          <div class="partners-carousel"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- <div class="main-div">
-    <div class="first-sect pt-20 text-white">
-      <div class="container txt-log text-left w-full">
-        <h1
-          class="text-[30px] w-[250px] lit:w-[400px] sm:text-[40px] sm:w-[550px] lg:text-[70px] lg:w-[900px] mb-4"
-        >
-          Комплексная технологичная ЛОГИСТИКА
-        </h1>
-        <p class="w-[240px] lit:w-[400px] sm:w-[550px] lg:w-[630px]">
-          Компания СП ООО «Uzlogistic» за короткое время успела стать динамично развивающимся
-          3PL-оператором, предоставляющим полный спектр логистических услуг. Мы работаем с любыми
-          типами грузов и организовываем поставки из любой точки мира под различными таможенными
-          процедурами. Ключевым преимуществом компаний является собственная логистическая
-          инфраструктура, а также то, что СП ООО «Uzlogistic» включена в реестр таможенных
-          перевозчиков, осуществляющих перевозку товаров, находящихся под таможенным контролем без
-          таможенного сопровождения, и в реестр единых поставщиков услуг, что позволяет заключать
-          прямые договоры с местными организациями, осуществляющими внешнеторговые операции, без
-          проведения тендера.
-        </p>
-      </div>
-      <div class="container pt-16 pl-8">
-        <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-5">
-          <div class="grid lg:flex items-center gap-3">
-            <img class="w-12" src="/public/icons/advantage-1.png" alt="" />
-            <p class="w-[130px] text-sm font-normal">Професиональная команда</p>
-          </div>
-          <div class="grid lg:flex items-center gap-3">
-            <img class="w-12" src="/public/icons/advantage-2.png" alt="" />
-            <p class="w-[150px] text-sm font-normal">Обширная география перевозок</p>
-          </div>
-          <div class="grid lg:flex items-center gap-3">
-            <img class="w-12" src="/public/icons/advantage-3.png" alt="" />
-            <p class="w-[100px] text-sm font-normal">58 стран</p>
-          </div>
-          <div class="grid lg:flex items-center gap-3">
-            <img class="w-12" src="/public/icons/advantage-4.png" alt="" />
-            <p class="w-[170px] text-sm font-normal">Более 554 автомобилей</p>
-          </div>
-          <div class="grid lg:flex items-center gap-3">
-            <img class="w-12" src="/public/icons/advantage-5.png" alt="" />
-            <p class="w-[130px] text-sm font-normal">Собственный терминал</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="second-sect z-1 flex items-center">
-      <div class="about-block z-20 w-6/12 h-[420px] pt-12 pl-[350px]">
-        <div class="title text-6xl pb-20 relative w-[500px]">
-          <h1>
-            О нашей компании
-            <span class="absolute right-0 top-[40px] text-green-600 font-medium">Uzlogistic</span>
-          </h1>
-        </div>
-        <div class="text-content w-[520px]">
-          <p>
-            Основными направлениями деятельности являются интермодальные и мультимодальные перевозки
-            всеми видами транспорта, а также складские и терминальные услуги внутри и за пределами
-            Республики Узбекистан. При этом компания является основным перевозчиком
-            машиностроительной отрасли страны, в частности, АО «UzAuto Motors».
-          </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script setup></script>
@@ -224,6 +236,103 @@ p {
   background-size: cover;
   background-position: center;
   min-height: 100svh;
+}
+
+.first-service:hover {
+  background-image: url('/public/newbg/image5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+}
+
+.first-service {
+  background:
+    linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
+    url('/public/newbg/image5.jpg') no-repeat center center;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.second-service:hover {
+  background-image: url('/public/newbg/image3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+}
+
+.second-service {
+  background:
+    linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
+    url('/public/newbg/image3.jpg') no-repeat center center;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.third-service:hover {
+  background-image: url('/public/newbg/image2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+}
+
+.third-service {
+  background:
+    linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
+    url('/public/newbg/image2.jpg') no-repeat center center;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.fourth-service:hover {
+  background-image: url('/public/newbg/image4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+}
+
+.fourth-service {
+  background:
+    linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
+    url('/public/newbg/image4.jpg') no-repeat center center;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.fifth-service:hover {
+  background-image: url('/public/newbg/image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+}
+
+.fifth-service {
+  background:
+    linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
+    url('/public/newbg/image.jpg') no-repeat center center;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.partners-sect {
+  background-image: url('/public/bg/bg-partners.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100svh;
+}
+
+/* Carousel */
+/* Slider */
+.slick-slide {
+  margin: 0px 10px;
+}
+.slick-slide img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {

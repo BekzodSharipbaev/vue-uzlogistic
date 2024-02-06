@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <header class="header">
+    <header class="header relative">
       <div class="header-top relative w-full top-0 left-0 z-30">
         <div class="container">
           <div class="header_body relative flex justify-between items-center h-32">
@@ -63,6 +63,21 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="menu absolute top-24 right-[23rem] z-50 bg-red-600 h-14 w-fit max_lg:hidden">
+        <div class="">
+          <ul class="flex pt-3">
+            <li>
+              <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">ГЛАВНАЯ</a>
+            </li>
+            <li>
+              <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">О НАС</a>
+            </li>
+            <li>
+              <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">НАШИ УСЛУГИ</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -145,6 +160,14 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgb(11, 41, 79);
+}
+
+.menu {
+  background-color: rgb(9, 32, 63);
+}
+
+.menu li a {
+  font-family: 'Oswald', sans-serif;
 }
 
 .btn-block:hover {
