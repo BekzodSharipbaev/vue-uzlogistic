@@ -53,7 +53,7 @@
               </ul>
             </div>
             <div
-              class="btn-block bg-green-600 px-4 py-[11px] border-b-[6px] border-green-700 duration-500 hover:border-black max_lg:hidden"
+              class="btn-block relative bg-green-600 px-4 py-[11px] border-b-[6px] border-green-700 duration-500 hover:border-black max_lg:hidden"
             >
               <div class="btn-content">
                 <a href="#" class="h-full w-full">
@@ -62,22 +62,22 @@
                 </a>
               </div>
             </div>
+            <div class="menu absolute top-24 right-0 z-50 bg-red-600 h-14 w-fit max_lg:hidden">
+              <div class="">
+                <ul class="flex pt-3">
+                  <li>
+                    <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">ГЛАВНАЯ</a>
+                  </li>
+                  <li>
+                    <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">О НАС</a>
+                  </li>
+                  <li>
+                    <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">НАШИ УСЛУГИ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="menu absolute top-24 right-[23rem] z-50 bg-red-600 h-14 w-fit max_lg:hidden">
-        <div class="">
-          <ul class="flex pt-3">
-            <li>
-              <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">ГЛАВНАЯ</a>
-            </li>
-            <li>
-              <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">О НАС</a>
-            </li>
-            <li>
-              <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">НАШИ УСЛУГИ</a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -147,7 +147,7 @@
 
 <script></script>
 
-<style>
+<style scoped>
 p {
   font-family: 'Oswald', sans-serif;
 }
