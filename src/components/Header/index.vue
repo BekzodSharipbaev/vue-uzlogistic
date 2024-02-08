@@ -82,67 +82,6 @@
       </div>
     </header>
   </div>
-  <!-- <div>
-    <div class="header-main flex items-center justify-evenly pt-2 pl-24 pb-4">
-      <div class="container">
-        <div class="left-sect hover:cursor-pointer">
-          <a href="#"></a>
-          <img class="w-[100px] lg:w-[184px] object-cover" src="/public/logo.png" alt="logo" />
-        </div>
-        <div class="middle-sect hidden sm:flex items-center gap-5">
-          <div class="email flex items-center gap-3">
-            <i class="fa-solid fa-envelope icons text-green-600"></i>
-            <p class="text-lg">info@uzlogistic.uz</p>
-          </div>
-          <div class="phone flex flex-col items-center justify-items-center gap-3 mb-10">
-            <span class="text-green-600 text-xl ml-16">Круглосуточно</span>
-            <span
-              ><i class="fa-solid fa-phone icons text-green-600 mr-3"></i>
-              <span class="font-bold">(+998 78) 150-80-08</span></span
-            >
-          </div>
-          <div class="nets flex items-center gap-3">
-            <a href="#" class="hover:text-green-600"
-              ><i class="fa-brands fa-facebook-f text-xl"> </i
-            ></a>
-            <a href="#" class="hover:text-green-600 duration-500"
-              ><i class="fa-solid fa-paper-plane text-xl"></i
-            ></a>
-            <a href="#" class="hover:text-green-600 duration-500"
-              ><i class="fa-brands fa-whatsapp text-xl"></i
-            ></a>
-            <a href="#" class="hover:text-green-600 duration-500"
-              ><i class="fa-brands fa-linkedin-in text-xl"></i
-            ></a>
-          </div>
-          <div
-            class="btn-div flex bg-green-600 items-center h-14 px-4 duration-500 border-b-[6px] border-green-700"
-          >
-            <a href="#" class="mr-2"><i class="fa-solid fa-file-signature text-xl"></i></a>
-            <p>ЗАЯВКА НА ПЕРЕВОЗКУ</p>
-          </div>
-          <div class="mob-menu">
-            <a href=""></a>
-            <i class="fa-solid fa-bars text-green-600"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="right-sect hidden text-white lg:flex justify-between mr-[312px] -mt-6">
-      <div class="text-black"></div>
-      <ul class="flex items-center">
-        <li>
-          <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">ГЛАВНАЯ</a>
-        </li>
-        <li>
-          <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">О НАС</a>
-        </li>
-        <li>
-          <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">НАШИ УСЛУГИ</a>
-        </li>
-      </ul>
-    </div>
-  </div> -->
 </template>
 
 <script></script>
@@ -151,7 +90,6 @@
 p {
   font-family: 'Oswald', sans-serif;
 }
-
 .header-top::before {
   content: '';
   position: absolute;
@@ -159,7 +97,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(11, 41, 79);
+  background-color: rgb(11, 40, 79);
 }
 
 .menu {
