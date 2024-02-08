@@ -18,9 +18,9 @@
         <form class="pt-4" action="">
           <div class="input-content mb-3 w-10/12 max_md:w-full">
             <p class="text-black max_md:text-lg max_min:text-base">*Ваше имя:</p>
-            <div class="input-group flex-nowrap">
+            <div class="inputGroup input-group flex-nowrap">
               <span class="input-group-text" id="addon-wrapping"
-                ><i class="fa-solid fa-user text-2xl text-black max_min:text-xl"></i
+                ><i class="iconLabel fa-solid fa-user text-2xl text-black max_min:text-xl"></i
               ></span>
               <input
                 type="text"
@@ -166,13 +166,21 @@
 <script setup></script>
 
 <style scoped>
-input {
+.inputGroup input {
   box-shadow: inset 1px 3px 25px -13px black;
 }
 
-input:focus {
+.inputGroup input:focus {
   box-shadow: inset 1px 3px 25px -13px black;
   border: 1px solid rgb(214, 214, 214);
+}
+
+.inputGroup:focus-within span {
+  background: green;
+}
+
+.inputGroup:focus-within .iconLabel {
+  color: #fff !important;
 }
 
 .contacts-sect {
