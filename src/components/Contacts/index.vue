@@ -32,10 +32,10 @@
           </div>
           <div class="input-content mb-3 w-10/12 max_md:w-full">
             <p class="text-black max_md:text-lg max_min:text-base">*Ваш номер телефона:</p>
-            <div class="input-group flex-nowrap">
+            <div class="inputGroup input-group flex-nowrap">
               <span class="input-group-text" id="addon-wrapping"
                 ><i
-                  class="fa-solid fa-phone text-2xl text-black focus:text-white max_min:text-xl"
+                  class="iconLabel fa-solid fa-phone text-2xl text-black focus:text-white max_min:text-xl"
                 ></i
               ></span>
               <input
@@ -48,9 +48,9 @@
           </div>
           <div class="input-content mb-3 w-10/12 max_md:w-full">
             <p class="text-black max_md:text-lg max_min:text-base">*Ваша организация:</p>
-            <div class="input-group flex-nowrap">
+            <div class="inputGroup input-group flex-nowrap">
               <span class="input-group-text" id="addon-wrapping"
-                ><i class="fa-solid fa-city text-2xl text-black max_min:text-xl"></i
+                ><i class="iconLabel fa-solid fa-city text-2xl text-black max_min:text-xl"></i
               ></span>
               <input
                 type="text"
@@ -64,9 +64,9 @@
             <p class="text-black max_md:text-lg max_min:text-base">
               *Когда вам позвонить по Ташкентскому времени:
             </p>
-            <div class="input-group flex-nowrap">
+            <div class="inputGroup input-group flex-nowrap">
               <span class="input-group-text" id="addon-wrapping"
-                ><i class="fa-solid fa-clock text-2xl text-black max_min:text-xl"></i
+                ><i class="iconLabel fa-solid fa-clock text-2xl text-black max_min:text-xl"></i
               ></span>
               <input
                 type="text"

@@ -62,9 +62,9 @@
                 </a>
               </div>
             </div>
-            <div class="menu absolute top-24 right-0 z-50 bg-red-600 h-14 w-fit max_lg:hidden">
+            <div class="menu absolute top-[6.2rem] right-0 z-50 bg-red-600 w-fit max_lg:hidden">
               <div class="">
-                <ul class="flex pt-3">
+                <ul class="flex items-center">
                   <li>
                     <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">ГЛАВНАЯ</a>
                   </li>
@@ -72,7 +72,18 @@
                     <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">О НАС</a>
                   </li>
                   <li>
-                    <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">НАШИ УСЛУГИ</a>
+                    <div class="dropdown hover:bg-green-600 duration-500">
+                      <button class="dropbtn flex gap-3 py-3 px-4 text-sm font-bold">
+                        НАШИ УСЛУГИ <i class="fa-solid fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="#">Мультимодальные контейнерные перевозки</a>
+                        <a href="#">Транспортировка автомобилей</a>
+                        <a href="#">Перевозка опасных грузов</a>
+                        <a href="#">Управление цепочками поставок и проектная логистика</a>
+                        <a href="#">Услуги контейнерных терминалов и складские услуги</a>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -117,13 +128,46 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-.menu {
-  background-color: rgb(9, 32, 63);
-}
-
 .btn-div:hover {
   background-color: rgb(9, 32, 63);
   cursor: pointer;
   border-color: rgb(9, 32, 63);
+}
+
+.dropbtn {
+  color: white;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #062d5d;
+  min-width: 330px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  padding: 10px 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #062d5d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
