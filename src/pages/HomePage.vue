@@ -189,6 +189,7 @@
           </div>
           <div class="partners-carousel"></div>
         </div>
+        
       </div>
     </div>
   </div>
