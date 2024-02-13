@@ -80,7 +80,7 @@
             <span
               class="btn-block bg-green-600 px-5 py-2 duration-500 border-b-[7px] border-green-500"
             >
-              <button>Отправить</button>
+              <button class="">Отправить</button>
             </span>
           </div>
         </form>
@@ -197,6 +197,13 @@
   background-size: contain;
   background-position: right top;
   box-shadow: 0 0 90px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-block {
+  transform: skew(-20deg);
+}
+.btn-block button {
+  transform: skew(20deg);
 }
 
 .btn-block:hover {

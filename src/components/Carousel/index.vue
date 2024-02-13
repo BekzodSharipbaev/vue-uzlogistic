@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div id="carouselExampleIndicators" class="carousel slide flex flex-col w-2/4">
+    <div id="carouselExampleIndicators" class="carousel flex flex-col w-full">
       <div class="carousel-inner p-10">
         <div class="carousel-item active">
           <div class="flex justify-center">
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="carousel-bottom flex justify-center">
-        <div class="carousel-indicators w-32">
+        <div class="carousel-indicators w-32 max_lit:w-20">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -100,23 +100,23 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="flex justify-end gap-2 w-60 mb-3 ml-40">
+        <div class="flex justify-end gap-2 w-60 mb-3 ml-40 max_lit:w-20">
           <button
-            class="carousel-btn carousel-control-prev relative bg-green-600 w-[25%]"
+            class="carousel-btn carousel-control-prev relative bg-green-600 opacity-100 w-[25%]"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <i class="fa-solid fa-arrow-left text-xl"></i>
+            <i class="fa-solid fa-arrow-left text-xl max_lit:text-base"></i>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-btn carousel-control-next relative bg-green-600 w-[25%]"
+            class="carousel-btn carousel-control-next relative bg-green-600 opacity-100 w-[25%]"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <i class="fa-solid fa-arrow-right text-xl"></i>
+            <i class="fa-solid fa-arrow-right text-xl max_lit:text-base"></i>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -169,5 +169,37 @@
 
 .carousel-btn:active {
   transform: skew(-25deg) translateY(0.2rem);
+}
+
+@media (max-width: 1024px) {
+  .img-block {
+    margin: 10px;
+    height: 9rem;
+    width: 13rem;
+  }
+}
+
+@media (max-width: 736px) {
+  .img-block {
+    margin: 6px;
+    height: 6rem;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .img-block {
+    margin: 3px;
+    height: 6rem;
+    width: 7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-block {
+    margin: 2px;
+    height: 4rem;
+    width: 5rem;
+  }
 }
 </style>

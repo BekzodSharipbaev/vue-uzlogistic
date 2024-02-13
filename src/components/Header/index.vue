@@ -5,7 +5,7 @@
         <div class="container">
           <div class="header_body relative flex justify-between items-center h-32">
             <div class="logo-sect w-1/3">
-              <a href="#">
+              <a @click="$router.push({ name: 'home' })">
                 <img class="w-1/2 max_md:w-3/5 max_min:w-full" src="/public/logo.png" alt="logo" />
               </a>
             </div>
@@ -66,10 +66,18 @@
               <div class="">
                 <ul class="flex items-center">
                   <li>
-                    <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">ГЛАВНАЯ</a>
+                    <a
+                      @click="$router.push({ name: 'home' })"
+                      class="text-sm font-bold p-3 hover:bg-green-600 duration-500"
+                      >ГЛАВНАЯ</a
+                    >
                   </li>
                   <li>
-                    <a class="text-sm font-bold p-3 hover:bg-green-600 duration-500">О НАС</a>
+                    <a
+                      @click="$router.push({ name: 'about' })"
+                      class="text-sm font-bold p-3 hover:bg-green-600 duration-500"
+                      >О НАС</a
+                    >
                   </li>
                   <li>
                     <div class="dropdown hover:bg-green-600 duration-500">

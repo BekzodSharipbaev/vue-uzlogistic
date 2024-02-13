@@ -168,38 +168,38 @@
       </div>
     </div>
     <div class="partners-sect p-20">
-      <div class="container">
-        <div class="partners-title flex flex-col items-end">
+      <div
+        class="pr-44 max_lg:w-full max_lg:m-auto max_lg:p-0 max_lg:flex max_lg:flex-col max_lg:items-center"
+      >
+        <div class="partners-title flex flex-col items-end mb-16 max_lg:items-center">
           <h1 class="text-6xl mb-[2rem]">Наши <b class="text-green-600">партнеры</b></h1>
-          <p>Нашими партнерами являются:</p>
+          <p class="max_lg:text-lg">Нашими партнерами являются:</p>
         </div>
-        <div class="partners-content">
-          <div class="partners-img w-1/2 relative max_lg:hidden">
-            <img src="/public/other/short-partners.png" alt="" />
-            <h1 class="text-6xl absolute top-72 left-24 max_xl:text-4xl">Более</h1>
-            <h2 class="text-[10rem] text-green-600 absolute bottom-14 left-24 max_xl:text-[6rem]">
-              <big class="text-[16rem] text-green-600 max_xl:text-[10rem]">5</big>
-              лет
-            </h2>
-            <h3
-              class="text-7xl font-bold absolute top-[38rem] left-24 max_xl:text-5xl max_xl:top-[34rem]"
-            >
-              Партнерство
-            </h3>
+        <div class="partners-content flex gap-56 max_2big:gap-32 max_big:gap-20 max_xl:gap-0">
+          <div class="partners-img pt-[18.7rem] w-2/3 text-white max_lg:hidden">
+            <div class="flex flex-col justify-end pl-[5.9rem]">
+              <h1 class="text-6xl font-bold">Более</h1>
+              <h2 class="text-[10rem] -mt-10 text-green-600">
+                <big class="text-[16rem] font-bold text-green-600">5</big>
+                лет
+              </h2>
+              <h3 class="text-[5rem] -mt-9 font-bold">Партнерство</h3>
+            </div>
           </div>
-          <div class="partners-carousel"></div>
+          <div class="partners-carousel">
+            <Carousel />
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header/index.vue'
+import Carousel from '@/components/Carousel/index.vue'
 export default {
   components: {
-    Header
+    Carousel
   }
 }
 </script>
@@ -331,7 +331,16 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100svh;
+  min-height: 120svh;
+}
+
+.partners-img {
+  background-image: url('/public/other/short-partners.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 579px;
+  height: 667px;
 }
 
 @media (max-width: 768px) {
@@ -359,6 +368,10 @@ p {
 
   .about-title h1 span {
     display: none;
+  }
+
+  .partners-sect {
+    min-height: 60svh;
   }
 }
 </style>
