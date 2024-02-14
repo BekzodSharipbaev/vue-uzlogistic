@@ -5,72 +5,72 @@
         <div class="carousel-item active">
           <div class="flex justify-center">
             <div class="img-block">
-              <img src="/public/partners/1.jpg" class="d-block" alt="..." />
+              <img src="/partners/1.jpg" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/1.jpg" class="d-block" alt="..." />
+              <img src="/partners/1.jpg" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/3.jpg" class="d-block" alt="..." />
-            </div>
-          </div>
-          <div class="flex justify-center">
-            <div class="img-block">
-              <img src="/public/partners/green.png" class="d-block" alt="..." />
-            </div>
-            <div class="img-block">
-              <img src="/public/partners/green.png" class="d-block" alt="..." />
-            </div>
-            <div class="img-block">
-              <img src="/public/partners/energy.png" class="d-block" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="flex justify-center">
-            <div class="img-block">
-              <img src="/public/partners/exchabge_arrow.png" class="d-block" alt="..." />
-            </div>
-            <div class="img-block">
-              <img src="/public/partners/1.jpg" class="d-block" alt="..." />
-            </div>
-            <div class="img-block">
-              <img src="/public/partners/3.jpg" class="d-block" alt="..." />
+              <img src="/partners/3.jpg" class="d-block" alt="..." />
             </div>
           </div>
           <div class="flex justify-center">
             <div class="img-block">
-              <img src="/public/partners/green.png" class="d-block" alt="..." />
+              <img src="/partners/green.png" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/energy.png" class="d-block" alt="..." />
+              <img src="/partners/green.png" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/exchabge_arrow.png" class="d-block" alt="..." />
+              <img src="/partners/energy.png" class="d-block" alt="..." />
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="flex justify-center">
             <div class="img-block">
-              <img src="/public/partners/3.jpg" class="d-block" alt="..." />
+              <img src="/partners/exchabge_arrow.png" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/1.jpg" class="d-block" alt="..." />
+              <img src="/partners/1.jpg" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/energy.png" class="d-block" alt="..." />
+              <img src="/partners/3.jpg" class="d-block" alt="..." />
             </div>
           </div>
           <div class="flex justify-center">
             <div class="img-block">
-              <img src="/public/partners/exchabge_arrow.png" class="d-block" alt="..." />
+              <img src="/partners/green.png" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/green.png" class="d-block" alt="..." />
+              <img src="/partners/energy.png" class="d-block" alt="..." />
             </div>
             <div class="img-block">
-              <img src="/public/partners/3.jpg" class="d-block" alt="..." />
+              <img src="/partners/exchabge_arrow.png" class="d-block" alt="..." />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="flex justify-center">
+            <div class="img-block">
+              <img src="/partners/3.jpg" class="d-block" alt="..." />
+            </div>
+            <div class="img-block">
+              <img src="/partners/1.jpg" class="d-block" alt="..." />
+            </div>
+            <div class="img-block">
+              <img src="/partners/energy.png" class="d-block" alt="..." />
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="img-block">
+              <img src="/partners/exchabge_arrow.png" class="d-block" alt="..." />
+            </div>
+            <div class="img-block">
+              <img src="/partners/green.png" class="d-block" alt="..." />
+            </div>
+            <div class="img-block">
+              <img src="/partners/3.jpg" class="d-block" alt="..." />
             </div>
           </div>
         </div>

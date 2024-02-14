@@ -83,7 +83,7 @@ a {
   background:
     linear-gradient(to bottom, rgba(2, 32, 66, 0.705), rgba(3, 32, 65, 0.658)) no-repeat center
       center fixed,
-    url('/public/slider/slide-1.jpg') no-repeat center center;
+    url('/slider/slide-1.jpg') no-repeat center center;
   background-size: cover;
   min-height: calc(45svh - 128px);
 }
@@ -118,7 +118,7 @@ a {
     background:
       linear-gradient(to bottom, rgba(2, 32, 66, 0.705), rgba(3, 32, 65, 0.658)) no-repeat center
         center fixed,
-      url('/public/slider/slide-1.jpg') no-repeat top left;
+      url('/slider/slide-1.jpg') no-repeat top left;
     background-size: cover;
     min-height: calc(40svh - 128px);
   }

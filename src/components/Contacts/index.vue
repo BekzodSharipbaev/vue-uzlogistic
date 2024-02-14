@@ -184,7 +184,7 @@
 }
 
 .contacts-sect {
-  background-image: url('/public/bg/bg-contacts.jpg');
+  background-image: url('/bg/bg-contacts.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -192,7 +192,7 @@
 }
 
 .contacts-short {
-  background-image: url('/public/bg/bg-envelope.jpg');
+  background-image: url('/bg/bg-envelope.jpg');
   background-repeat: repeat-y;
   background-size: contain;
   background-position: right top;

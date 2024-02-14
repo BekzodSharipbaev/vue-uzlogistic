@@ -6,7 +6,7 @@
           <div class="header_body relative flex justify-between items-center h-32">
             <div class="logo-sect w-1/3">
               <a @click="$router.push({ name: 'home' })">
-                <img class="w-1/2 max_md:w-3/5 max_min:w-full" src="/public/logo.png" alt="logo" />
+                <img class="w-1/2 max_md:w-3/5 max_min:w-full" src="/logo.png" alt="logo" />
               </a>
             </div>
             <div class="header_burger hidden">
@@ -85,11 +85,21 @@
                         НАШИ УСЛУГИ <i class="fa-solid fa-caret-down"></i>
                       </button>
                       <div class="dropdown-content">
-                        <a href="#">Мультимодальные контейнерные перевозки</a>
-                        <a href="#">Транспортировка автомобилей</a>
-                        <a href="#">Перевозка опасных грузов</a>
-                        <a href="#">Управление цепочками поставок и проектная логистика</a>
-                        <a href="#">Услуги контейнерных терминалов и складские услуги</a>
+                        <a @click="$router.push({ name: 'multi_trans' })"
+                          >Мультимодальные контейнерные перевозки</a
+                        >
+                        <a @click="$router.push({ name: 'auto_trans' })"
+                          >Транспортировка автомобилей</a
+                        >
+                        <a @click="$router.push({ name: 'danger_trans' })"
+                          >Перевозка опасных грузов</a
+                        >
+                        <a @click="$router.push({ name: 'manage_trans' })"
+                          >Управление цепочками поставок и проектная логистика</a
+                        >
+                        <a @click="$router.push({ name: 'terminal_service' })"
+                          >Услуги контейнерных терминалов и складские услуги</a
+                        >
                       </div>
                     </div>
                   </li>

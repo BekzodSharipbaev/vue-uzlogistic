@@ -24,23 +24,23 @@
           <div class="advantages-items">
             <ul class="grid grid-cols-5 gap-2 max_lg:grid-cols-3 max_sm:grid-cols-2">
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-                <img src="/public/icons/advantage-1.png" alt="advantage-1" />
+                <img src="/icons/advantage-1.png" alt="advantage-1" />
                 <p>Профессиональная команда</p>
               </li>
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-                <img src="/public/icons/advantage-2.png" alt="advantage-1" />
+                <img src="/icons/advantage-2.png" alt="advantage-1" />
                 <p>Обширная география перевозок</p>
               </li>
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-                <img src="/public/icons/advantage-3.png" alt="advantage-1" />
+                <img src="/icons/advantage-3.png" alt="advantage-1" />
                 <p>58 стран</p>
               </li>
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-                <img src="/public/icons/advantage-4.png" alt="advantage-1" />
+                <img src="/icons/advantage-4.png" alt="advantage-1" />
                 <p>Более 554 автомобилей</p>
               </li>
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-                <img src="/public/icons/advantage-5.png" alt="advantage-1" />
+                <img src="/icons/advantage-5.png" alt="advantage-1" />
                 <p>Собственный терминал</p>
               </li>
             </ul>
@@ -53,23 +53,23 @@
         <div class="advantages-items">
           <ul class="grid grid-cols-5 gap-2 max_lg:grid-cols-3 max_sm:grid-cols-2">
             <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-              <img src="/public/icons/advantage-1.png" alt="advantage-1" />
+              <img src="/icons/advantage-1.png" alt="advantage-1" />
               <p>Профессиональная команда</p>
             </li>
             <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-              <img src="/public/icons/advantage-2.png" alt="advantage-1" />
+              <img src="/icons/advantage-2.png" alt="advantage-1" />
               <p>Обширная география перевозок</p>
             </li>
             <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-              <img src="/public/icons/advantage-3.png" alt="advantage-1" />
+              <img src="/icons/advantage-3.png" alt="advantage-1" />
               <p>58 стран</p>
             </li>
             <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-              <img src="/public/icons/advantage-4.png" alt="advantage-1" />
+              <img src="/icons/advantage-4.png" alt="advantage-1" />
               <p>Более 554 автомобилей</p>
             </li>
             <li class="flex items-center gap-3 max_min:grid max_min:w-18">
-              <img src="/public/icons/advantage-5.png" alt="advantage-1" />
+              <img src="/icons/advantage-5.png" alt="advantage-1" />
               <p>Собственный терминал</p>
             </li>
           </ul>
@@ -116,7 +116,7 @@
         class="services-items flex mt-32 max_lg:grid max_lg:grid-cols-3 max_md:grid-cols-2 max_lit:grid-cols-1"
       >
         <div class="service-item mb-36 h-[27.5rem] w-[19.5rem] max_lg:w-full max_lg:mb-0">
-          <a href="#">
+          <a @click="$router.push({ name: 'multi_trans' })">
             <div class="first-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Мультимодальные контейнерные перевозки</h1>
               <span class="flex items-center gap-2">
@@ -126,7 +126,7 @@
           </a>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a href="#">
+          <a @click="$router.push({ name: 'auto_trans' })">
             <div class="second-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Транспортировка автомобилей</h1>
               <span class="flex items-center gap-2">
@@ -136,7 +136,7 @@
           </a>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a href="#">
+          <a @click="$router.push({ name: 'danger_trans' })">
             <div class="third-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Перевозка опасных грузов</h1>
               <span class="flex items-center gap-2">
@@ -146,7 +146,7 @@
           </a>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a href="#">
+          <a @click="$router.push({ name: 'manage_trans' })">
             <div class="fourth-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Управление цепочками поставок</h1>
               <span class="flex items-center gap-2">
@@ -156,7 +156,7 @@
           </a>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a href="#">
+          <a @click="$router.push({ name: 'terminal_service' })">
             <div class="fifth-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Услуги контейнерных терминалов</h1>
               <span class="flex items-center gap-2">
@@ -223,7 +223,7 @@ p {
 }
 
 .second-sect {
-  background-image: url('public/bg/bg-about.jpg');
+  background-image: url('/bg/bg-about.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -239,7 +239,7 @@ p {
 }
 
 .services-sect {
-  background-image: url('/public/bg/bg-services.jpg');
+  background-image: url('/bg/bg-services.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -247,7 +247,7 @@ p {
 }
 
 .first-service:hover {
-  background-image: url('/public/newbg/image5.jpg');
+  background-image: url('/newbg/image5.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -257,13 +257,13 @@ p {
 .first-service {
   background:
     linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
-    url('/public/newbg/image5.jpg') no-repeat center center;
+    url('/newbg/image5.jpg') no-repeat center center;
   background-size: cover;
   transition: 0.3s;
 }
 
 .second-service:hover {
-  background-image: url('/public/newbg/image3.jpg');
+  background-image: url('/newbg/image3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -273,13 +273,13 @@ p {
 .second-service {
   background:
     linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
-    url('/public/newbg/image3.jpg') no-repeat center center;
+    url('/newbg/image3.jpg') no-repeat center center;
   background-size: cover;
   transition: 0.3s;
 }
 
 .third-service:hover {
-  background-image: url('/public/newbg/image2.jpg');
+  background-image: url('/newbg/image2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -289,13 +289,13 @@ p {
 .third-service {
   background:
     linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
-    url('/public/newbg/image2.jpg') no-repeat center center;
+    url('/newbg/image2.jpg') no-repeat center center;
   background-size: cover;
   transition: 0.3s;
 }
 
 .fourth-service:hover {
-  background-image: url('/public/newbg/image4.jpg');
+  background-image: url('/newbg/image4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -305,13 +305,13 @@ p {
 .fourth-service {
   background:
     linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
-    url('/public/newbg/image4.jpg') no-repeat center center;
+    url('/newbg/image4.jpg') no-repeat center center;
   background-size: cover;
   transition: 0.3s;
 }
 
 .fifth-service:hover {
-  background-image: url('/public/newbg/image.jpg');
+  background-image: url('/newbg/image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -321,13 +321,13 @@ p {
 .fifth-service {
   background:
     linear-gradient(to right, rgba(0, 38, 82, 0.863), rgba(0, 40, 85, 0.89)) no-repeat center center,
-    url('/public/newbg/image.jpg') no-repeat center center;
+    url('/newbg/image.jpg') no-repeat center center;
   background-size: cover;
   transition: 0.3s;
 }
 
 .partners-sect {
-  background-image: url('/public/bg/bg-partners.jpg');
+  background-image: url('/bg/bg-partners.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -335,7 +335,7 @@ p {
 }
 
 .partners-img {
-  background-image: url('/public/other/short-partners.png');
+  background-image: url('/other/short-partners.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -360,7 +360,7 @@ p {
     background:
       linear-gradient(to right, rgba(2, 52, 109, 0.365), rgba(5, 61, 124, 0.605)) no-repeat center
         center,
-      url('/public/bg/bg-about.jpg') no-repeat center center;
+      url('/bg/bg-about.jpg') no-repeat center center;
   }
   .about-text p {
     font-size: 18px;
