@@ -9,10 +9,8 @@
                 <img class="w-1/2 max_md:w-3/5 max_min:w-full" src="/logo.png" alt="logo" />
               </a>
             </div>
-            <div class="header_burger hidden">
-              <span></span>
-            </div>
-            <div class="email-block flex items-center gap-3 max_min:hidden">
+
+            <div class="email-block flex items-center gap-3 max_md:hidden">
               <i class="fa-solid fa-envelope text-green-600 text-2xl"></i>
               <p class="text-lg max_md:text-base">info@uzlogistic.uz</p>
             </div>
@@ -106,6 +104,7 @@
                 </ul>
               </div>
             </div>
+            <div class="header_burger"><MenuBurger /></div>
           </div>
         </div>
       </div>
@@ -113,7 +112,14 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import MenuBurger from '@/components/MenuBurger/index.vue'
+export default {
+  components: {
+    MenuBurger
+  }
+}
+</script>
 
 <style scoped>
 p {

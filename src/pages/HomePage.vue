@@ -116,54 +116,54 @@
         class="services-items flex mt-32 max_lg:grid max_lg:grid-cols-3 max_md:grid-cols-2 max_lit:grid-cols-1"
       >
         <div class="service-item mb-36 h-[27.5rem] w-[19.5rem] max_lg:w-full max_lg:mb-0">
-          <a @click="$router.push({ name: 'multi_trans' })">
+          <router-link to="/multimodal-transportation" @click="scrollToTop">
             <div class="first-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Мультимодальные контейнерные перевозки</h1>
               <span class="flex items-center gap-2">
                 Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
               ></span>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a @click="$router.push({ name: 'auto_trans' })">
+          <router-link to="/auto-transportation" @click="scrollToTop">
             <div class="second-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Транспортировка автомобилей</h1>
               <span class="flex items-center gap-2">
                 Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
               ></span>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a @click="$router.push({ name: 'danger_trans' })">
+          <router-link to="/dangerous-transportation" @click="scrollToTop">
             <div class="third-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Перевозка опасных грузов</h1>
               <span class="flex items-center gap-2">
                 Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
               ></span>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a @click="$router.push({ name: 'manage_trans' })">
+          <router-link to="/management-transportation" @click="scrollToTop">
             <div class="fourth-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Управление цепочками поставок</h1>
               <span class="flex items-center gap-2">
                 Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
               ></span>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="service-item h-[27.5rem] w-[19.5rem] max_lg:w-full">
-          <a @click="$router.push({ name: 'terminal_service' })">
+          <router-link to="/terminal-services" @click="scrollToTop">
             <div class="fifth-service flex flex-col justify-between h-full w-full p-4">
               <h1 class="text-2xl">Услуги контейнерных терминалов</h1>
               <span class="flex items-center gap-2">
                 Посмотреть <i class="bi bi-arrow-right text-green-600 text-xl"></i
               ></span>
             </div>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -200,6 +200,12 @@ import Carousel from '@/components/Carousel/index.vue'
 export default {
   components: {
     Carousel
+  },
+
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    }
   }
 }
 </script>
@@ -213,7 +219,7 @@ p {
   background:
     linear-gradient(to right, rgba(2, 52, 109, 0.365), rgba(5, 61, 124, 0.605)) no-repeat center
       center fixed,
-    url('/public/slider/slide-1.jpg') no-repeat center center fixed;
+    url('/slider/slide-1.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: calc(100svh - 128px);
 }
