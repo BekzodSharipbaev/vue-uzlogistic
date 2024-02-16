@@ -1,24 +1,25 @@
 <template>
   <div class="wrapper">
     <header class="header relative">
+      <FormTransRequest id="formTrans" :class="{ open: isOpen }" />
       <div class="header-top relative w-full top-0 left-0 z-30">
         <div class="container">
           <div class="header_body relative flex justify-between items-center h-32">
             <div class="logo-sect w-1/3">
-              <a @click="$router.push({ name: 'home' })">
+              <a @click="$router.push({ name: 'home' })" class="w-fit">
                 <img class="w-1/2 max_md:w-3/5 max_min:w-full" src="/logo.png" alt="logo" />
               </a>
             </div>
 
             <div class="email-block flex items-center gap-3 max_md:hidden">
-              <i class="fa-solid fa-envelope text-green-600 text-2xl"></i>
+              <fa :icon="['fas', 'envelope']" class="text-2xl"></fa>
               <p class="text-lg max_md:text-base">info@uzlogistic.uz</p>
             </div>
             <div class="phone-numb-block flex items-center gap-3 relative max_lit:hidden">
               <span class="crug absolute -top-6 right-0 text-lg text-green-600 max_md:text-base"
                 >Круглосуточно</span
               >
-              <i class="fa-solid fa-phone icons text-green-600 text-2xl"></i>
+              <fa :icon="['fas', 'phone']" class="text-2xl text-green-600" />
               <p class="text-lg max_md:text-base">(+998 78) <b>150-80-08</b></p>
             </div>
             <div class="nets-block max_md:hidden">
@@ -51,16 +52,17 @@
               </ul>
             </div>
             <div
+              @click="toggleForm"
               class="btn-block relative bg-green-600 px-4 py-[11px] border-b-[6px] border-green-700 duration-500 hover:border-black max_lg:hidden"
             >
               <div class="btn-content">
-                <a href="#" class="h-full w-full">
+                <button class="h-full w-full">
                   <i class="fa-solid fa-file-signature text-2xl pr-2"></i>
                   <span class="text-[15px]">ЗАЯВКА НА ПЕРЕВОЗКУ</span>
-                </a>
+                </button>
               </div>
             </div>
-            <div class="menu absolute top-[6.2rem] right-0 z-50 bg-red-600 w-fit max_lg:hidden">
+            <div class="menu absolute top-[6.2rem] right-5 z-50 bg-red-600 w-fit max_lg:hidden">
               <div class="">
                 <ul class="flex items-center">
                   <li>
@@ -114,14 +116,33 @@
 
 <script>
 import MenuBurger from '@/components/MenuBurger/index.vue'
+import FormTransRequest from '@/components/FormTransRequest/index.vue'
+
 export default {
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    toggleForm() {
+      this.isOpen = !this.isOpen
+    }
+  },
   components: {
-    MenuBurger
+    MenuBurger,
+    FormTransRequest
   }
 }
 </script>
 
 <style scoped>
+#formTrans {
+  display: none;
+}
+#formTrans.open {
+  display: block;
+}
 p {
   font-family: 'Oswald', sans-serif;
 }

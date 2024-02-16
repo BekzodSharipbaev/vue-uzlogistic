@@ -1,21 +1,17 @@
 <template>
-  <div class="carousel-sect">
-    <Carousel />
+  <div class="form-sect">
+    <FormTransRequest />
   </div>
 </template>
 
 <script>
-import Carousel from '@/components/Carousel/index.vue'
+import FormTransRequest from '@/components/FormTransRequest/index.vue'
 export default {
   components: {
-    Carousel
+    FormTransRequest
   }
 }
 </script>
 
 <style scoped>
-.carousel-sect {
-  min-height: 100svh;
-  background-color: black;
-}
 </style>

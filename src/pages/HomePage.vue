@@ -1,8 +1,9 @@
 <template>
   <div class="wrapper">
-    <div class="first-sect">
+    <div class="first-sect relative">
+      <!-- <div><FormTransRequest /></div> -->
       <div class="container flex flex-col items-center justify-center h-screen">
-        <div class="content pb-32">
+        <div class="content pb-32 max_2xl:pb-10 max_2xl:pt-36">
           <h1
             class="text-7xl font-normal w-4/5 mb-3.5 leading-normal max_lg:leading-none max_lg:w-full max_md:text-5xl max_md:text-center max_min:text-3xl max_lit:text-2xl"
           >
@@ -20,7 +21,7 @@
             проведения тендера.
           </p>
         </div>
-        <div class="advantages">
+        <div class="advantages max_2xl:pb-20">
           <div class="advantages-items">
             <ul class="grid grid-cols-5 gap-2 max_lg:grid-cols-3 max_sm:grid-cols-2">
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
@@ -197,9 +198,12 @@
 
 <script>
 import Carousel from '@/components/Carousel/index.vue'
+import FormTransRequest from '@/components/FormTransRequest/index.vue'
+
 export default {
   components: {
-    Carousel
+    Carousel,
+    FormTransRequest
   },
 
   methods: {
@@ -219,9 +223,9 @@ p {
   background:
     linear-gradient(to right, rgba(2, 52, 109, 0.365), rgba(5, 61, 124, 0.605)) no-repeat center
       center fixed,
-    url('/slider/slide-1.jpg') no-repeat center center fixed;
+    url('/slider/slide-1.jpg') no-repeat center center;
   background-size: cover;
-  min-height: calc(100svh - 128px);
+  min-height: calc(120svh - 180px);
 }
 
 .advantages p {
@@ -347,6 +351,11 @@ p {
   background-position: center;
   width: 579px;
   height: 667px;
+}
+@media (max-width: 1552px) {
+  .first-sect {
+    min-height: calc(140svh - 200px);
+  }
 }
 
 @media (max-width: 768px) {

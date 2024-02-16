@@ -1,8 +1,11 @@
 <template>
   <div class="burger relative items-center justify-end w-8 h-5 hidden max_md:flex">
     <div class="burger-wrapper" @click="toggleMenu" :class="{ active: isBurgerActive }">
-      <i v-if="isBurgerActive" class="fa-solid fa-times text-[1.8rem]"></i>
-      <i v-else class="fa-solid fa-bars text-[1.7rem]"></i>
+      <i v-if="isBurgerActive" class="fa-solid fa-times text-[1.8rem] hover:cursor-pointer"></i>
+      <i
+        v-else
+        class="fa-solid fa-bars text-[1.7rem] duration-400 hover:cursor-pointer hover:text-green-600"
+      ></i>
       <!-- <span class="burger-icon"></span> -->
     </div>
 
@@ -15,7 +18,9 @@
         :class="{ active: isBurgerActive }"
         class="flex justify-end absolute top-13 right-10"
       >
-        <i class="fa-solid fa-times text-[1.7rem]"></i>
+        <i
+          class="fa-solid fa-times text-[1.7rem] duration-400 hover:cursor-pointer hover:text-green-600"
+        ></i>
       </div>
       <div class="menu">
         <div @click="toggleMenu" :class="{ active: isBurgerActive }">
