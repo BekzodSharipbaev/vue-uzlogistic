@@ -1,12 +1,11 @@
 <template>
   <div class="burger relative items-center justify-end w-8 h-5 hidden max_md:flex">
-    <div class="burger-wrapper" @click="toggleMenu" :class="{ active: isBurgerActive }">
-      <i v-if="isBurgerActive" class="fa-solid fa-times text-[1.8rem] hover:cursor-pointer"></i>
-      <i
-        v-else
-        class="fa-solid fa-bars text-[1.7rem] duration-400 hover:cursor-pointer hover:text-green-600"
-      ></i>
-      <!-- <span class="burger-icon"></span> -->
+    <div class="burger-wrapper text-white" @click="toggleMenu" :class="{ active: isBurgerActive }">
+      <fa
+        v-if="!isBurgerActive"
+        :icon="['fas', 'bars']"
+        class="text-[1.7rem] duration-300 hover:cursor-pointer hover:text-green-600"
+      />
     </div>
 
     <div :class="{ open: isMenuOpen }" class="sidebar-menu">
@@ -16,11 +15,12 @@
       <div
         @click="toggleMenu"
         :class="{ active: isBurgerActive }"
-        class="flex justify-end absolute top-13 right-10"
+        class="flex text-white justify-end absolute top-13 right-10"
       >
-        <i
-          class="fa-solid fa-times text-[1.7rem] duration-400 hover:cursor-pointer hover:text-green-600"
-        ></i>
+        <fa
+          :icon="['fas', 'xmark']"
+          class="text-[1.7rem] duration-300 hover:cursor-pointer hover:text-green-600"
+        />
       </div>
       <div class="menu">
         <div @click="toggleMenu" :class="{ active: isBurgerActive }">
@@ -39,7 +39,7 @@
         </div>
         <div class="dropdown">
           <a
-            class="osw btn dropdown-toggle text-zinc-200 p-0 text-xl duration-300 hover:text-green-600"
+            class="osw btn dropdown-toggle border-0 text-zinc-200 p-0 text-xl duration-300 hover:text-green-600 focus:text-zinc-200"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -52,14 +52,14 @@
             <li @click="toggleMenu" :class="{ active: isBurgerActive }">
               <a
                 @click="$router.push({ name: 'multi_trans' })"
-                class="dropdown-item text-zinc-200 osw duration-300 hover:bg-green-600"
+                class="dropdown-item text-zinc-200 osw duration-300 hover:text-white hover:bg-green-600"
                 >Мультимодальные контейнерные перевозки
               </a>
             </li>
             <li @click="toggleMenu" :class="{ active: isBurgerActive }">
               <a
                 @click="$router.push({ name: 'auto_trans' })"
-                class="dropdown-item text-zinc-200 osw duration-300 hover:bg-green-600"
+                class="dropdown-item text-zinc-200 osw duration-300 hover:text-white hover:bg-green-600"
                 href="#"
                 >Транспортировка автомобилей
               </a>
@@ -67,7 +67,7 @@
             <li @click="toggleMenu" :class="{ active: isBurgerActive }">
               <a
                 @click="$router.push({ name: 'danger_trans' })"
-                class="dropdown-item text-zinc-200 osw duration-300 hover:bg-green-600"
+                class="dropdown-item text-zinc-200 osw duration-300 hover:text-white hover:bg-green-600"
                 href="#"
                 >Перевозка опасных грузов
               </a>
@@ -75,7 +75,7 @@
             <li @click="toggleMenu" :class="{ active: isBurgerActive }">
               <a
                 @click="$router.push({ name: 'manage_trans' })"
-                class="dropdown-item text-zinc-200 osw duration-300 hover:bg-green-600"
+                class="dropdown-item text-zinc-200 osw duration-300 hover:text-white hover:bg-green-600"
                 href="#"
                 >Управление цепочками поставок и проектная логистика
               </a>
@@ -83,7 +83,7 @@
             <li @click="toggleMenu" :class="{ active: isBurgerActive }">
               <a
                 @click="$router.push({ name: 'terminal_service' })"
-                class="dropdown-item text-zinc-200 osw duration-300 hover:bg-green-600"
+                class="dropdown-item text-zinc-200 osw duration-300 hover:text-white hover:bg-green-600"
                 href="#"
                 >Услуги контейнерных терминалов и складские услуги
               </a>
@@ -95,8 +95,8 @@
             class="btn-block text-center bg-green-600 w-52 py-[11px] duration-500 hover:border-black"
           >
             <div class="btn-content">
-              <a href="#" class="h-full w-full">
-                <i class="fa-solid fa-file-signature text-lg pr-2"></i>
+              <a href="#" class="h-full w-full text-white">
+                <fa :icon="['fas', 'file-signature']" class="text-lg pr-2" />
                 <span class="text-sm osw">ЗАЯВКА НА ПЕРЕВОЗКУ</span>
               </a>
             </div>

@@ -12,7 +12,7 @@
             </div>
 
             <div class="email-block flex items-center gap-3 max_md:hidden">
-              <fa :icon="['fas', 'envelope']" class="text-2xl"></fa>
+              <fa :icon="['fas', 'envelope']" class="text-green-600 text-2xl"></fa>
               <p class="text-lg max_md:text-base">info@uzlogistic.uz</p>
             </div>
             <div class="phone-numb-block flex items-center gap-3 relative max_lit:hidden">
@@ -25,29 +25,32 @@
             <div class="nets-block max_md:hidden">
               <ul class="nets_list flex gap-3">
                 <li>
-                  <a href="#"
-                    ><i class="fa-brands fa-facebook-f text-xl hover:text-green-600 duration-500">
-                    </i
-                  ></a>
+                  <a class="text-white" href="#"
+                    ><fa
+                      :icon="['fab', 'facebook-f']"
+                      class="text-lg duration-300 hover:text-green-600"
+                  /></a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><i
-                      class="fa-solid fa-paper-plane text-xl hover:text-green-600 duration-500"
-                    ></i
-                  ></a>
+                  <a class="text-white" href="#"
+                    ><fa
+                      :icon="['fas', 'paper-plane']"
+                      class="text-lg duration-500 hover:text-green-600"
+                  /></a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="fa-brands fa-whatsapp text-xl hover:text-green-600 duration-500"></i
-                  ></a>
+                  <a class="text-white" href="#"
+                    ><fa
+                      :icon="['fab', 'whatsapp']"
+                      class="text-xl duration-300 hover:text-green-600"
+                  /></a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><i
-                      class="fa-brands fa-linkedin-in text-xl hover:text-green-600 duration-500"
-                    ></i
-                  ></a>
+                  <a class="text-white" href="#"
+                    ><fa
+                      :icon="['fab', 'linkedin-in']"
+                      class="text-xl duration-300 hover:text-green-600"
+                  /></a>
                 </li>
               </ul>
             </div>
@@ -56,8 +59,8 @@
               class="btn-block relative bg-green-600 px-4 py-[11px] border-b-[6px] border-green-700 duration-500 hover:border-black max_lg:hidden"
             >
               <div class="btn-content">
-                <button class="h-full w-full">
-                  <i class="fa-solid fa-file-signature text-2xl pr-2"></i>
+                <button class="h-full w-full text-white">
+                  <fa :icon="['fas', 'file-signature']" class="text-2xl pr-2" />
                   <span class="text-[15px]">ЗАЯВКА НА ПЕРЕВОЗКУ</span>
                 </button>
               </div>
@@ -68,36 +71,46 @@
                   <li>
                     <a
                       @click="$router.push({ name: 'home' })"
-                      class="text-sm font-bold p-3 hover:bg-green-600 duration-500"
+                      class="text-sm font-bold p-3 text-white hover:bg-green-600 duration-500"
                       >ГЛАВНАЯ</a
                     >
                   </li>
                   <li>
                     <a
                       @click="$router.push({ name: 'about' })"
-                      class="text-sm font-bold p-3 hover:bg-green-600 duration-500"
+                      class="text-sm font-bold p-3 text-white hover:bg-green-600 duration-500"
                       >О НАС</a
                     >
                   </li>
                   <li>
                     <div class="dropdown hover:bg-green-600 duration-500">
                       <button class="dropbtn flex gap-3 py-3 px-4 text-sm font-bold">
-                        НАШИ УСЛУГИ <i class="fa-solid fa-caret-down"></i>
+                        НАШИ УСЛУГИ <fa :icon="['fas', 'caret-down']" />
                       </button>
                       <div class="dropdown-content">
-                        <a @click="$router.push({ name: 'multi_trans' })"
+                        <a
+                          class="duration-150 hover:text-white"
+                          @click="$router.push({ name: 'multi_trans' })"
                           >Мультимодальные контейнерные перевозки</a
                         >
-                        <a @click="$router.push({ name: 'auto_trans' })"
+                        <a
+                          class="duration-150 hover:text-white"
+                          @click="$router.push({ name: 'auto_trans' })"
                           >Транспортировка автомобилей</a
                         >
-                        <a @click="$router.push({ name: 'danger_trans' })"
+                        <a
+                          class="duration-150 hover:text-white"
+                          @click="$router.push({ name: 'danger_trans' })"
                           >Перевозка опасных грузов</a
                         >
-                        <a @click="$router.push({ name: 'manage_trans' })"
+                        <a
+                          class="duration-150 hover:text-white"
+                          @click="$router.push({ name: 'manage_trans' })"
                           >Управление цепочками поставок и проектная логистика</a
                         >
-                        <a @click="$router.push({ name: 'terminal_service' })"
+                        <a
+                          class="duration-150 hover:text-white"
+                          @click="$router.push({ name: 'terminal_service' })"
                           >Услуги контейнерных терминалов и складские услуги</a
                         >
                       </div>
@@ -209,7 +222,7 @@ p {
 }
 
 .dropdown-content a:hover {
-  background-color: #062d5d;
+  background-color: #1a395e;
 }
 
 .dropdown:hover .dropdown-content {

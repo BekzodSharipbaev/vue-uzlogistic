@@ -10,7 +10,6 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 h1,
@@ -21,10 +20,12 @@ h5,
 h6,
 span {
   font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .container {

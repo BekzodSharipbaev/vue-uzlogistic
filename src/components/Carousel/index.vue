@@ -107,7 +107,7 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <i class="fa-solid fa-arrow-left text-xl max_lit:text-base"></i>
+            <fa :icon="['fas', 'arrow-left']" class="faaa text-xl p-[0.45rem] max_lit:text-base" />
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -116,7 +116,7 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <i class="fa-solid fa-arrow-right text-xl max_lit:text-base"></i>
+            <fa :icon="['fas', 'arrow-right']" class="faaa text-xl p-[0.45rem] max_lit:text-base" />
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -169,6 +169,10 @@
 
 .carousel-btn:active {
   transform: skew(-25deg) translateY(0.2rem);
+}
+
+.faaa {
+  transform: skew(25deg);
 }
 
 @media (max-width: 1024px) {

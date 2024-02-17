@@ -19,9 +19,11 @@
           <div class="input-content mb-3 w-10/12 max_md:w-full">
             <p class="text-black max_md:text-lg max_min:text-base">*Ваше имя:</p>
             <div class="inputGroup input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i class="iconLabel fa-solid fa-user text-2xl text-black max_min:text-xl"></i
-              ></span>
+              <span class="input-group-text duration-300" id="addon-wrapping"
+                ><fa
+                  :icon="['fas', 'user']"
+                  class="iconLabel duration-300 py-1 text-2xl max_min:text-xl"
+              /></span>
               <input
                 type="text"
                 class="form-control"
@@ -33,11 +35,12 @@
           <div class="input-content mb-3 w-10/12 max_md:w-full">
             <p class="text-black max_md:text-lg max_min:text-base">*Ваш номер телефона:</p>
             <div class="inputGroup input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i
-                  class="iconLabel fa-solid fa-phone text-2xl text-black focus:text-white max_min:text-xl"
-                ></i
-              ></span>
+              <span class="input-group-text duration-300" id="addon-wrapping"
+                ><fa
+                  :icon="['fas', 'phone']"
+                  class="iconLabel duration-300 py-1 text-2xl max_min:text-xl"
+                />
+              </span>
               <input
                 type="text"
                 class="form-control"
@@ -49,9 +52,11 @@
           <div class="input-content mb-3 w-10/12 max_md:w-full">
             <p class="text-black max_md:text-lg max_min:text-base">*Ваша организация:</p>
             <div class="inputGroup input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i class="iconLabel fa-solid fa-city text-2xl text-black max_min:text-xl"></i
-              ></span>
+              <span class="input-group-text duration-300" id="addon-wrapping"
+                ><fa
+                  :icon="['fas', 'city']"
+                  class="iconLabel duration-300 py-1 text-2xl max_min:text-xl"
+              /></span>
               <input
                 type="text"
                 class="form-control"
@@ -65,9 +70,11 @@
               *Когда вам позвонить по Ташкентскому времени:
             </p>
             <div class="inputGroup input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i class="iconLabel fa-solid fa-clock text-2xl text-black max_min:text-xl"></i
-              ></span>
+              <span class="input-group-text duration-300" id="addon-wrapping"
+                ><fa
+                  :icon="['fas', 'clock']"
+                  class="iconLabel duration-300 py-1 text-2xl max_min:text-xl"
+              /></span>
               <input
                 type="text"
                 class="form-control"
@@ -86,35 +93,35 @@
         </form>
       </div>
       <div class="contacts-content w-1/2 h-[38rem] max_min:w-4/5 max_lit:pt-20">
-        <div class="text-gray-900">
-          <h1 class="text-6xl max_lg:text-4xl max_lit:text-3xl">Контакты</h1>
+        <div class="text-gray-800">
+          <h1 class="text-6xl text-gray-800 max_lg:text-4xl max_lit:text-3xl">Контакты</h1>
           <br />
           <div class="contacts-info">
             <div class="contacts-info-item flex items-center gap-4 mb-10">
-              <p class="bg-green-600 p-[10px]">
-                <i class="fa-solid fa-phone text-3xl max_lg:text-xl"></i>
+              <p class="iconss bg-green-600 p-[10px]">
+                <fa :icon="['fas', 'phone']" class="faaa text-3xl max_lg:text-xl" />
               </p>
               <p class="text-black text-3xl max_lg:text-xl">
                 (+998 78) <b class="text-black">150-80-08</b>
               </p>
             </div>
             <div class="contacts-info-item flex items-center gap-4 mb-10">
-              <p class="bg-green-600 p-[10px]">
-                <i class="fa-solid fa-fax text-3xl max_lg:text-xl"></i>
+              <p class="iconss bg-green-600 p-[10px]">
+                <fa :icon="['fas', 'fax']" class="faaa text-3xl max_lg:text-xl" />
               </p>
               <p class="text-black text-3xl max_lg:text-xl">
                 (+998 78) <b class="text-black">150-80-08</b>
               </p>
             </div>
             <div class="contacts-info-item flex items-center gap-4 mb-10">
-              <p class="bg-green-600 p-[10px]">
-                <i class="fa-solid fa-envelope text-3xl max_lg:text-xl"></i>
+              <p class="iconss bg-green-600 p-[10px]">
+                <fa :icon="['fas', 'envelope']" class="faaa text-3xl max_lg:text-xl" />
               </p>
               <p class="text-black text-xl max_lg:text-lg">info@uzlogistic.uz</p>
             </div>
             <div class="contacts-info-item flex items-center gap-4 mb-10">
-              <p class="bg-green-600 px-[11.3px] py-[8px]">
-                <i class="fa-solid fa-location-dot text-4xl max_lg:text-xl"></i>
+              <p class="iconss bg-green-600 px-[11.3px] py-[8px]">
+                <fa :icon="['fas', 'location-dot']" class="faaa text-4xl max_lg:text-xl" />
               </p>
               <p class="text-black text-xl max_lg:text-lg">
                 Республика Узбекистан, г.Ташкент, ул. Ойбек, 36
@@ -129,32 +136,32 @@
           <ul class="nets_list flex gap-4 pt-3">
             <li>
               <a href="#"
-                ><i
-                  class="fa-brands fa-facebook-f text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
-                >
-                </i
-              ></a>
+                ><fa
+                  :icon="['fab', 'facebook-f']"
+                  class="text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
+                />
+              </a>
             </li>
             <li>
               <a href="#"
-                ><i
-                  class="fa-solid fa-paper-plane text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
-                ></i
-              ></a>
+                ><fa
+                  :icon="['fas', 'paper-plane']"
+                  class="text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
+              /></a>
             </li>
             <li>
               <a href="#"
-                ><i
-                  class="fa-brands fa-whatsapp text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
-                ></i
-              ></a>
+                ><fa
+                  :icon="['fab', 'whatsapp']"
+                  class="text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
+              /></a>
             </li>
             <li>
               <a href="#"
-                ><i
-                  class="fa-brands fa-linkedin-in text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
-                ></i
-              ></a>
+                ><fa
+                  :icon="['fab', 'linkedin-in']"
+                  class="text-blue-900 text-2xl hover:text-green-600 duration-500 max_min:text-xl"
+              /></a>
             </li>
           </ul>
         </div>
@@ -210,6 +217,15 @@
   background-color: rgb(11, 39, 75);
   cursor: pointer;
   border-color: rgb(15, 58, 114);
+}
+
+.iconss {
+  transform: skew(-10deg);
+}
+
+.faaa {
+  transform: skew(10deg);
+  padding: 2px;
 }
 
 @media (max-width: 768px) {
