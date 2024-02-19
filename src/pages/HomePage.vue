@@ -229,7 +229,7 @@ p {
 }
 
 .advantages p {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
 }
 
 .second-sect {

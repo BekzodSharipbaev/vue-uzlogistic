@@ -157,7 +157,7 @@ export default {
   display: block;
 }
 p {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
 }
 .header-top::before {
   content: '';
@@ -174,7 +174,7 @@ p {
 }
 
 .menu li a {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
 }
 
 .btn-block:hover {
@@ -195,7 +195,7 @@ p {
 .dropbtn {
   color: white;
   border: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
 }
 
 .dropdown {
@@ -214,7 +214,7 @@ p {
 
 .dropdown-content a {
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
   font-size: 14px;
   font-weight: 400;
   display: flex;

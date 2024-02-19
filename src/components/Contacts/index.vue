@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="contacts-sect flex items-center gap-14 max_md:flex-col">
+    <div class="contacts-sect flex items-center gap-24 max_md:flex-col">
       <div
         class="contacts-short w-1/2 h-[41rem] pt-14 pl-64 max_2big:pl-32 max_lg:pl-20 max_md:text-center max_md:pl-0 max_md:w-4/5"
       >

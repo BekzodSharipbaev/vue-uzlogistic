@@ -126,7 +126,7 @@ export default {
 
 <style scoped>
 .osw {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
 }
 .dropp {
   background-color: rgb(56, 55, 55);

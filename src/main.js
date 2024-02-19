@@ -4,6 +4,13 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from '@/router/router.js'
 
+// FONTS
+import '@fontsource-variable/oswald'
+import '@fontsource/roboto'
+
+// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/js/bootstrap.js'
+
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
