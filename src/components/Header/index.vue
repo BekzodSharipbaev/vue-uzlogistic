@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <header class="header relative">
-      <FormTransRequest id="formTrans" :class="{ open: isOpen }" />
+      <FormTransRequest id="formTrans" :class="{ open: isOpen }" :myFunction="toggleForm" />
       <div class="header-top relative w-full top-0 left-0 z-30">
         <div class="container">
           <div class="header_body relative flex justify-between items-center h-32">
@@ -22,7 +22,7 @@
               <fa :icon="['fas', 'phone']" class="text-2xl text-green-600" />
               <p class="text-lg max_md:text-base">(+998 78) <b>150-80-08</b></p>
             </div>
-            <div class="nets-block max_md:hidden">
+            <div class="nets-block max_lg:hidden">
               <ul class="nets_list flex gap-3">
                 <li>
                   <a class="text-white" href="#"
@@ -119,7 +119,7 @@
                 </ul>
               </div>
             </div>
-            <div class="header_burger"><MenuBurger /></div>
+            <div class="header_burger max_lg:pr-10"><MenuBurger /></div>
           </div>
         </div>
       </div>
@@ -227,5 +227,11 @@ p {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media (max-width: 425px) {
+  .header_burger {
+    padding-right: 0;
+  }
 }
 </style>

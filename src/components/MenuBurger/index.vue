@@ -1,5 +1,6 @@
 <template>
-  <div class="burger relative items-center justify-end w-8 h-5 hidden max_md:flex">
+  <div class="burger relative items-center justify-end w-8 h-5 hidden">
+    <FormTransRequest id="formTrans" :class="{ open: isOpen }" />
     <div class="burger-wrapper text-white" @click="toggleMenu" :class="{ active: isBurgerActive }">
       <fa
         v-if="!isBurgerActive"
@@ -22,6 +23,7 @@
           class="text-[1.7rem] duration-300 hover:cursor-pointer hover:text-green-600"
         />
       </div>
+
       <div class="menu">
         <div @click="toggleMenu" :class="{ active: isBurgerActive }">
           <a
@@ -92,6 +94,7 @@
         </div>
         <div class="flex justify-center">
           <div
+            @click="toggleForm"
             class="btn-block text-center bg-green-600 w-52 py-[11px] duration-500 hover:border-black"
           >
             <div class="btn-content">
@@ -108,23 +111,38 @@
 </template>
 
 <script>
+import FormTransRequest from '@/components/FormTransRequest/index.vue'
+
 export default {
   data() {
     return {
       isBurgerActive: false,
-      isMenuOpen: false
+      isMenuOpen: false,
+      isOpen: false
     }
   },
   methods: {
     toggleMenu() {
       this.isBurgerActive = !this.isBurgerActive
       this.isMenuOpen = !this.isMenuOpen
+    },
+    toggleForm() {
+      this.isOpen = !this.isOpen
     }
+  },
+  components: {
+    FormTransRequest
   }
 }
 </script>
 
 <style scoped>
+#formTrans {
+  display: none;
+}
+#formTrans.open {
+  display: block;
+}
 .osw {
   font-family: 'Oswald Variable', sans-serif;
 }
@@ -149,9 +167,14 @@ export default {
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1029px) {
   .burger {
     display: flex;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
   .sidebar-menu {
     display: none;
@@ -169,11 +192,6 @@ export default {
     padding: 50px 40px;
     background-color: rgb(56, 55, 55);
     /* animation: burgerAnimation 0.4s; */
-  }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
   }
 }
 </style>

@@ -2,7 +2,9 @@
   <div class="wrapper">
     <div class="first-sect relative">
       <!-- <div><FormTransRequest /></div> -->
-      <div class="container flex flex-col items-center justify-center h-screen">
+      <div
+        class="first-cont container flex flex-col items-center justify-center h-screen max_md:h-1/2"
+      >
         <div class="content pb-32 max_2xl:pb-10 max_2xl:pt-36">
           <h1
             class="text-7xl font-normal w-4/5 mb-3.5 leading-normal max_lg:leading-none max_lg:w-full max_md:text-5xl max_md:text-center max_min:text-3xl max_lit:text-2xl"
@@ -21,7 +23,7 @@
             проведения тендера.
           </p>
         </div>
-        <div class="advantages max_2xl:pb-20">
+        <div class="advantages max_2xl:pb-20 max_lg:pb-0 max_lg:mt-20">
           <div class="advantages-items">
             <ul class="grid grid-cols-5 gap-2 max_lg:grid-cols-3 max_sm:grid-cols-2">
               <li class="flex items-center gap-3 max_min:grid max_min:w-18">
@@ -53,25 +55,25 @@
       <div class="container">
         <div class="advantages-items">
           <ul class="grid grid-cols-5 gap-2 max_lg:grid-cols-3 max_sm:grid-cols-2">
-            <li class="flex items-center gap-3 max_min:grid max_min:w-18">
+            <li class="flex items-center gap-3 max_min:flex-col">
               <img src="/icons/advantage-1.png" alt="advantage-1" />
-              <p>Профессиональная команда</p>
+              <p class="max_min:text-center max_min:text-sm">Профессиональная команда</p>
             </li>
-            <li class="flex items-center gap-3 max_min:grid max_min:w-18">
+            <li class="flex items-center gap-3 max_min:flex-col">
               <img src="/icons/advantage-2.png" alt="advantage-1" />
-              <p>Обширная география перевозок</p>
+              <p class="max_min:text-center max_min:text-sm">Обширная география перевозок</p>
             </li>
-            <li class="flex items-center gap-3 max_min:grid max_min:w-18">
+            <li class="flex items-center gap-3 max_min:flex-col">
               <img src="/icons/advantage-3.png" alt="advantage-1" />
-              <p>58 стран</p>
+              <p class="max_min:text-center max_min:text-sm">58 стран</p>
             </li>
-            <li class="flex items-center gap-3 max_min:grid max_min:w-18">
+            <li class="flex items-center gap-3 max_min:flex-col">
               <img src="/icons/advantage-4.png" alt="advantage-1" />
-              <p>Более 554 автомобилей</p>
+              <p class="max_min:text-center max_min:text-sm">Более 554 автомобилей</p>
             </li>
-            <li class="flex items-center gap-3 max_min:grid max_min:w-18">
+            <li class="flex items-center gap-3 max_min:flex-col">
               <img src="/icons/advantage-5.png" alt="advantage-1" />
-              <p>Собственный терминал</p>
+              <p class="max_min:text-center max_min:text-sm">Собственный терминал</p>
             </li>
           </ul>
         </div>
@@ -80,14 +82,16 @@
     <div class="second-sect flex items-center">
       <div class="short-about bg-white w-1/2 h-[27.2rem] pt-14 pr-16 max_lit:pr-5">
         <div class="about-content pl-64 max_2xl:pl-32 max_lg:pl-14 max_lit:pl-5">
-          <div class="about-title mb-20 max_min:mb-5">
-            <h1 class="text-6xl text-black relative max_xl:text-4xl max_lit:text-3xl">
+          <div class="about-title mb-20 max_md:mb-14 max_min:mb-5">
+            <h1
+              class="text-6xl text-black relative max_xl:text-4xl max_md:text-green-600 max_lit:text-3xl"
+            >
               О нашей компании
-              <span class="absolute top-10 left-1/2 text-green-600">Uzlogistic</span>
+              <span class="absolute top-10 left-1/2 text-green-600 max_md:hidden">Uzlogistic</span>
             </h1>
           </div>
           <div class="about-text">
-            <p class="text-gray-700 max_lg:text-xs">
+            <p class="text-gray-700 max_lg:text-xs max_md:text-black">
               Основными направлениями деятельности являются интермодальные и мультимодальные
               перевозки всеми видами транспорта, а также складские и терминальные услуги внутри и за
               пределами Республики Узбекистан. При этом компания является основным перевозчиком
@@ -359,6 +363,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .first-sect {
+    min-height: calc(80svh);
+  }
   .advantages {
     display: none;
   }
