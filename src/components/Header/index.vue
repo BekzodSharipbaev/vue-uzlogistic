@@ -1,13 +1,19 @@
 <template>
   <div class="wrapper">
     <header class="header relative">
-      <FormTransRequest id="formTrans" :class="{ open: isOpen }" :myFunction="toggleForm" />
+      <GFormRequest id="formTrans" :class="{ open: isOpen }" :myFunction="toggleForm" />
+      <!-- <FormTransRequest id="formTrans" :class="{ open: isOpen }" :myFunction="toggleForm" /> -->
       <div class="header-top relative w-full top-0 left-0 z-30">
         <div class="container">
           <div class="header_body relative flex justify-between items-center h-32">
             <div class="logo-sect w-1/3">
-              <a @click="$router.push({ name: 'home' })" class="w-fit">
-                <img class="w-1/2 max_md:w-3/5 max_min:w-full" src="/logo.png" alt="logo" />
+              <a class="cursor-default">
+                <img
+                  @click="$router.push({ name: 'home' })"
+                  class="w-[45%] cursor-pointer max_md:w-3/5 max_min:w-full"
+                  src="/logo.png"
+                  alt="logo"
+                />
               </a>
             </div>
 
@@ -71,20 +77,20 @@
                   <li>
                     <a
                       @click="$router.push({ name: 'home' })"
-                      class="text-sm font-bold p-3 text-white hover:bg-green-600 duration-500"
+                      class="text-[15px] font-bold p-3 text-white hover:bg-green-600 duration-500"
                       >ГЛАВНАЯ</a
                     >
                   </li>
                   <li>
                     <a
                       @click="$router.push({ name: 'about' })"
-                      class="text-sm font-bold p-3 text-white hover:bg-green-600 duration-500"
+                      class="text-[15px] font-bold p-3 text-white hover:bg-green-600 duration-500"
                       >О НАС</a
                     >
                   </li>
                   <li>
                     <div class="dropdown hover:bg-green-600 duration-500">
-                      <button class="dropbtn flex gap-3 py-3 px-4 text-sm font-bold">
+                      <button class="dropbtn flex gap-3 py-3 px-3 text-[15px] font-bold">
                         НАШИ УСЛУГИ <fa :icon="['fas', 'caret-down']" />
                       </button>
                       <div class="dropdown-content">
@@ -116,6 +122,12 @@
                       </div>
                     </div>
                   </li>
+                  <li>
+                    <a
+                      class="text-[15px] font-bold p-3 text-red-600 hover:bg-green-600 duration-500"
+                      >MYUZLOGISTIC</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -130,6 +142,7 @@
 <script>
 import MenuBurger from '@/components/MenuBurger/index.vue'
 import FormTransRequest from '@/components/FormTransRequest/index.vue'
+import GFormRequest from '@/components/GFormRequest/index.vue'
 
 export default {
   data() {
@@ -144,7 +157,8 @@ export default {
   },
   components: {
     MenuBurger,
-    FormTransRequest
+    FormTransRequest,
+    GFormRequest
   }
 }
 </script>

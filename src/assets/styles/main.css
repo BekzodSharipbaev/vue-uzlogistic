@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00a841;
+
+  &:hover {
+    background: #aaaaaa;
+  }
+
+  &:active {
+    background: #6e6e6e;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
 a {
   cursor: pointer;
 }
